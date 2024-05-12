@@ -13,7 +13,7 @@ Backlog 標準ではボード画面からは同時にコピーは出来ないが
 コピーされる内容のイメージは以下の通り。
 
 ```
-ACTOUT-1 【ACTOUT】テスト課題
+ACTOUT-1 【ACTOUT】テスト課題 (期日: 2024/05/14)
 https://actout.backlog.com/view/ACTOUT-1
 ```
 

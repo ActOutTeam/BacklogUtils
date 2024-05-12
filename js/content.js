@@ -19,8 +19,15 @@ const extensionCopy = (e, task) => {
     const taskName = task.querySelector('p').innerText;
     const taskId = task.querySelector('.card-label').innerText;
     const origin = location.origin;
-    const copyText = `${taskId} ${taskName}\n${origin}/view/${taskId}`;
-    navigator.clipboard.writeText(copyText);
+
+    let dueDate = task.querySelector('input').value;
+    if (dueDate === '') {
+        dueDate = '未設定';
+    }
+
+    const firstLine = `${taskId} ${taskName} (期日: ${dueDate})`
+    const secondLine = `${origin}/view/${taskId}`;
+    navigator.clipboard.writeText(`${firstLine}\n${secondLine}`);
 }
 
 function main(event) {
